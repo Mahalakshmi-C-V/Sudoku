@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>SUDOKU</title>
+		<script src="sudoku.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="sudoku.css">
+	</head>
+	<body>
+		<div id="container">
+			<h1>Welcome to Sudoku!!!</h1>
+			<hr>
+			<div style="text-align: -webkit-center;">
+				<div id="page1" style="display: block;">
+					<p>Please select the mode of game: </p>
+					<button onclick="set_mode('easy')">Easy</button>
+					<button onclick="set_mode('medium')">Medium</button>
+					<button onclick="set_mode('hard')">Hard</button>
+				</div>
+				<div id="page2" style="display: none;">
+					<div id="sudoku"></div>
+					<button onclick="validate()">submit</button>
+				</div>
+				<div id="page3" style="display: none;">
+					<div style="display: inline-block" id="submitted_res"></div>
+					<div style="display: none; margin-left: 20px;" id="res"></div>
+					<button onclick="show_actual_sudoku()">Show Answer</button>
+					<p>Click <a href="#" onclick="play_again()">here</a> to play again.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

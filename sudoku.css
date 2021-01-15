@@ -1,0 +1,22 @@
+input{
+	border: 0px;
+}
+
+td, input{
+	width: 25px !important;
+	height: 25px;
+	text-align: center;
+}
+
+button{
+	width: 250px;
+	cursor: pointer;
+	display: block;
+	margin: 15px;
+	padding: 10px;
+}
+
+#container{
+	width: 60%;
+	margin: auto;
+}
